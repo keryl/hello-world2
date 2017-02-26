@@ -16,7 +16,7 @@ class SavingsAccount(BankAccount):
 		else:
 			self.balance += deposit
 			return self.balance
-	def withdraw(self,withdrawal):
+	def withdraw(self, withdrawal):
 		if type(withdrawal) =! int:
 			return 'Invalid withdrawal amount'
 		elif withdrawal < 0:
@@ -31,6 +31,7 @@ class SavingsAccount(BankAccount):
 class CurrentAccount(BankAccount):
 	def __init__(self):
 		self.balance = 0
+	def deposit(self,deposit):
 		if type(deposit) =! int:
 			return 'Invalid deposit amount'
 		elif deposit < 0:

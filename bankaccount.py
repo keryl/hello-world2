@@ -49,6 +49,3 @@ class CurrentAccount(BankAccount):
 		else:
 			self.balance -= withdrawal
 			return self.balance
-
-
-
